@@ -179,12 +179,12 @@ Set the Website Traffic property to Custom Combination. And then drill into the 
 
 ![Facebook Pixel Conditions](https://raw.githubusercontent.com/adam-s/facebook-pixel-guide/master/facebook_pixel_conditions.png)
 
-Here is the most important part. The 'in the last [number] of days' property is set to 7 days. This means two weeks from now if I use this audience, it will only show ads to Facebook users who also looked at a yacht chef job listing on my site **a week from now**.
+Here is the most important part. The 'in the last [number] of days' property is set to 7 days. This means two weeks from now if I use this audience, it will only show ads to Facebook users who also looked at a yacht chef job listing on my site **a week from now**. Sorry about the Back to the Future logic here. 
 
 ## 6. Create a Facebook campaign and ad set
 I'm not going into how to create ad campaigns, ad sets, and ads. That is another discussion. However, I will show how to use the custom audience to set the demographic target of an ad set. 
 
-On the ad set creation form, I click custom audience, then click the on the Chefs Looking audience and these ads will only be shown to people who looked at a chef job listing for up to seven since they last checked.
+On the ad set creation form, I click custom audience, then click the **Chefs Looking** audience and these ads will only be shown to people who looked at a chef job listing for up to seven since they last checked.
  
  ![Facebook Pixel Custom Ad Set](https://raw.githubusercontent.com/adam-s/facebook-pixel-guide/master/facebook_pixel_custom_ad_set.png)
  
