@@ -182,11 +182,11 @@ Set the Website Traffic property to Custom Combination. And then drill into the 
 Here is the most important part. The in the last number of days property is set to 7 days. This means two weeks from now if I use this audience, it will only show ads to Facebook users who also looked at a yacht chef job listing on my site **a week from now**.
 
 ## 6. Create a Facebook campaign and ad set
-I'm not going into how to create ad campaigns, ad sets, and ads. That is another discussion. However, I will show hot to use the custom audience to set the demographic target of an ad set. 
+I'm not going into how to create ad campaigns, ad sets, and ads. That is another discussion. However, I will show how to use the custom audience to set the demographic target of an ad set. 
 
-On the ad set creation form, I click custom audience and then click the on the Chefs Looking audience and these ads will only be shown to people who looked at a chef job listing for up to seven since they last checked.
+On the ad set creation form, I click custom audience, then click the on the Chefs Looking audience and these ads will only be shown to people who looked at a chef job listing for up to seven since they last checked.
  
  ![Facebook Pixel Custom Ad Set](https://raw.githubusercontent.com/adam-s/facebook-pixel-guide/master/facebook_pixel_custom_ad_set.png)
  
 ## 7. Using the Facebook Ad API to automate ads
-The Facebook Ads dashboard is rather cumbersome. It is possible to automate or create a custom dashboard which automates many of the tasks using the API. One way to implement this in this use case is to, when a new chef job listing is created, create and push an ad with a life of 3 days and a budget of $5 a day which will create 2,500 impressions at $2.00 per 1,000 impressions targeting people who have previously looked at a yacht chef's job listing in the past 7 days relative to when they looked at the job listing. 
+The Facebook Ads dashboard is rather cumbersome. It is possible to automate or create a custom dashboard which automates many of the tasks using the API. One way to implement this in this use case is to, when a new chef job listing is created, create and push an ad with a life of 3 days and a budget of $5 a day which will create 2,500 impressions a day at $2.00 per 1,000 impressions targeting people who have previously looked at a yacht chef's job listing in the past 7 days relative to when they looked at the job listing. 
