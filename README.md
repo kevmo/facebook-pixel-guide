@@ -169,4 +169,9 @@ Facebook will associated this information sent with the Facebook user.
 
 ## 5. Creating a custom audience using a Pixel
 
-One the Pixel dashboard, click the Create Audience button to create a custom audience using data stored from the Pixel.
+On the [Pixel dashboard](https://www.facebook.com/ads/manager/pixel/facebook_pixel/), click the Create Audience button to create a custom audience using data stored from the Pixel.
+
+![Facebook Pixel Dialog](https://raw.githubusercontent.com/adam-s/facebook-pixel-guide/master/facebook_pixel_dialog.png)
+
+Set the Website Traffic property to Custom Combination. And then drill into the data passed with the event using conditions. I want to target Facebook users who wanted more information about a yacht chef's position to let them know a new listing has been posted. So the condition I set for this audience is Event -> ViewListing -> Position -> Contains -> 'chef'.
+
