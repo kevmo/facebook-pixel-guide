@@ -4,7 +4,7 @@ Facebook allows us many different ways to target users with advertising. Faceboo
 
 There are lot of people angry about Facebook's use of personal information. Yes, but it is there and hopefully can be used in positive ways.
 
-The Facebook Pixel embedded in a page passes a Facebook cookie to Facebook which is used to check if the user is also a Facebook user. Facebook will allow you to target advertisements to any person associated with that page view on your website. This is how I use it in the context of a single page AngularJS app.
+The Facebook Pixel embedded in a page passes a Facebook cookie to Facebook which is used to check if the user is also a Facebook user. Facebook will allow you to target advertisements to any user associated with that page view on your website. This is how I use it in the context of a single page AngularJS app.
 
 Here is the link to the [Facebook Pixel Implementation Guide](https://www.facebook.com/business/help/952192354843755)
 
@@ -21,7 +21,7 @@ Here is the link to the [Facebook Pixel Implementation Guide](https://www.facebo
 ## 1. Motivation
 I built a job board for the yachting and marine industry, [Simple Yacht Jobs](http://www.simpleyachtjobs.com/), and I want both to promote it and to let people know if a job they might be interested in becomes available. The website knows if a person is interested in a type of job if they request more information for a particular job of that type already listed.
 
-Following is how I translate that action into letting that person know -- if they are a Facebook user which in the case of yachting most people are because they are working in places like the Caribbean and it connects them to friends and family back home in place like New Zealand, South Africa, and France -- that a job has become available. Rather than seeing another ad for a cell phone on Facebook, I'm going to help them find a job.
+Following is how I translate that action into letting that person know -- if they are a Facebook user which in the case of yachting most people are because they are working in places like the Caribbean and it connects them to friends and family back home in places like New Zealand, South Africa, and France -- that a job has become available. Rather than seeing another ad for a cell phone on Facebook, I'm going to help them find a job.
 
 ## 2. Privacy statement
 Letting people know what data you are collecting is not only a legal requirement but also the honest, decent thing to do. I include this statement in the privacy statement. 
@@ -33,7 +33,7 @@ Letting people know what data you are collecting is not only a legal requirement
  >You can **opt out** of being tracked by Google Analytics, Facebook Pixel, and most third party tracking services by using an ad blocker plugin for your browser. For example, [AdBlock](https://getadblock.com/) is a very popular ad and tracker blocker which will prevent this site from tracking you with Google Analytics and Facebook Pixel.
 
 ## 3. Embedded Facebook Pixel code
-I use Node.js and Express so I compile the `index.html` file with Swig on initial page load to include settings variables that get passed along from a config file and process variables to a global `window.values` object in the client. One of the settings values is `facebookPixelId` which contains my personal Pixel Id.
+I use Node.js and Express so I compile the `index.html` file with [Swig](https://github.com/paularmstrong/swig) on initial page load to include settings variables that get passed along from a config file and process variables to a global `window.values` object in the client. One of the settings values is `facebookPixelId` which contains my personal Pixel Id.
   
   You can find your Pixel Id in the [Facebook Ads Console](https://www.facebook.com/ads/manager/pixel/facebook_pixel).
   
@@ -57,7 +57,7 @@ I use Node.js and Express so I compile the `index.html` file with Swig on initia
   I didn't bother with the static fallback `<img>` pixel code because the site is useless without JavaScript enabled.
   
 ## 4. Capturing page interactions
-I created an AngularJS service that has for a `logEvent` method that makes a Facebook Pixel track call when called. It stores information about the event such the type of job a user was looking at and the position of the job, for example, yacht chef or captain. 
+I created an AngularJS service that for a `logEvent` method which makes a Facebook Pixel track call when called. Facebook will store information about the event including the type of job a user was looking at and the position of the job, for example, yacht chef or captain. 
   
 ````
   (function() {
@@ -132,7 +132,7 @@ I created an AngularJS service that has for a `logEvent` method that makes a Fac
   })();
   ````
   
-This method is called in the job listing information dialog controller is created when someone clicks the more information about the job button. 
+This method is called in the job listing information dialog controller when someone clicks the more information button. 
 
 ````
 (function() {
