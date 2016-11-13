@@ -57,7 +57,7 @@ I use Node.js and Express so I compile the `index.html` file with [Swig](https:/
   I didn't bother with the static fallback `<img>` pixel code because the site is useless without JavaScript enabled.
   
 ## 4. Capturing page interactions
-I created an AngularJS service that for a `logEvent` method which makes a Facebook Pixel track call when called. Facebook will store information about the event including the type of job a user was looking at and the position of the job, for example, yacht chef or captain. 
+I created an AngularJS service that has a `logEvent` method which makes a Facebook Pixel track call when called. Facebook will store information about the event including the type of job a user was looking at and the position of the job, for example, yacht chef or captain. 
   
 ````
   (function() {
