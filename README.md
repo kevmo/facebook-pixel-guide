@@ -15,6 +15,7 @@ Here is the link to the [Facebook Pixel Implementation Guide](https://www.facebo
 + Embedded pixel code
 + Capturing page interactions
 + Creating a custom audience using a Pixel
++ Create a Facebook campaign and ad set
 
 ## 1. Motivation
 I built a job board for the yachting and marine industry, [Simple Yacht Jobs](http://www.simpleyachtjobs.com/), and I want both to promote it and to let people know if a job they might be interested in becomes available. The website knows if a person is interested in a type of job if they request more information for a particular job of that type already listed.
@@ -175,3 +176,11 @@ On the [Pixel dashboard](https://www.facebook.com/ads/manager/pixel/facebook_pix
 
 Set the Website Traffic property to Custom Combination. And then drill into the data passed with the event using conditions. I want to target Facebook users who wanted more information about a yacht chef's position to let them know a new listing has been posted. So the condition I set for this audience is Event -> ViewListing -> Position -> Contains -> 'chef'.
 
+![Facebook Pixel Conditions](https://raw.githubusercontent.com/adam-s/facebook-pixel-guide/master/facebook_pixel_conditions.png)
+
+Here is the most important part. The in the last number of days property is set to 7 days. This means two weeks from now if I use this audience, it will only show ads to Facebook users who also looked at a yacht chef job listing on my site **a week from now**.
+
+## 6. Create a Facebook campaign and ad set
+I'm not going into how to create ad campaigns, ad sets, and ads. That is another discussion. However, I will show hot to use the custom audience to set the demographic target of an ad set. 
+
+On the ad set creation form, I click custom audience and then click the on the Chefs Looking audience and these ads will only be shown to people who looked at a chef job listing for up to seven since they last checked. 
