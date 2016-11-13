@@ -184,7 +184,7 @@ Here is the most important part. The 'in the last [number] of days' property is 
 ## 6. Create a Facebook campaign and ad set
 I'm not going into how to create ad campaigns, ad sets, and ads. That is another discussion. However, I will show how to use the custom audience to set the demographic target of an ad set. 
 
-On the ad set creation form, I click custom audience, then click the **Chefs Looking** audience and these ads will only be shown to people who looked at a chef job listing for up to seven since they last checked.
+On the ad set creation form, I click custom audience, then click the **Chefs Looking** audience and these ads will only be shown to people who looked at a chef job listing for up to seven days before the ad is shown to them on Facebook.
  
  ![Facebook Pixel Custom Ad Set](https://raw.githubusercontent.com/adam-s/facebook-pixel-guide/master/facebook_pixel_custom_ad_set.png)
  
