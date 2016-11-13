@@ -16,6 +16,7 @@ Here is the link to the [Facebook Pixel Implementation Guide](https://www.facebo
 + Capturing page interactions
 + Creating a custom audience using a Pixel
 + Create a Facebook campaign and ad set
++ Using the Facebook Ad API to automate ads
 
 ## 1. Motivation
 I built a job board for the yachting and marine industry, [Simple Yacht Jobs](http://www.simpleyachtjobs.com/), and I want both to promote it and to let people know if a job they might be interested in becomes available. The website knows if a person is interested in a type of job if they request more information for a particular job of that type already listed.
@@ -186,3 +187,6 @@ I'm not going into how to create ad campaigns, ad sets, and ads. That is another
 On the ad set creation form, I click custom audience and then click the on the Chefs Looking audience and these ads will only be shown to people who looked at a chef job listing for up to seven since they last checked.
  
  ![Facebook Pixel Custom Ad Set](https://raw.githubusercontent.com/adam-s/facebook-pixel-guide/master/facebook_pixel_custom_ad_set.png)
+ 
+## 7. Using the Facebook Ad API to automate ads
+The Facebook Ads dashboard is rather cumbersome. It is possible to automate or create a custom dashboard which automates many of the tasks using the API. One way to implement this in this use case is to, when a new chef job listing is created, create and push an ad with a life of 3 days and a budget of $5 a day which will create 2,500 impressions at $2.00 per 1,000 impressions targeting people who have previously looked at a yacht chef's job listing in the past 7 days relative to when they looked at the job listing. 
